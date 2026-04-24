@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VisionPath – AI Navigation for the Visually Impaired</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">Vision<span>Path</span></a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#technology">Technology</a></li>
+        <li><a href="#impact">Impact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Get Early Access</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#technology">Technology</a>
+      <a href="#impact">Impact</a>
+      <a href="#contact" class="mobile-cta">Get Early Access</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>By Team Aeroprix</span>
+      </div>
+      <h1 class="hero-title">
+        Navigate the world<br>
+        <em>without limits</em>
+      </h1>
+      <p class="hero-subtitle">
+        AI-powered computer vision meets real-time voice guidance —
+        empowering 285 million visually impaired individuals to move
+        through the world with complete independence.
+      </p>
+      <div class="hero-ctas">
+        <a href="#how-it-works" class="btn-primary">See How It Works</a>
+        <a href="#impact" class="btn-ghost">Our Impact →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">285M</span>
+          <span class="stat-label">People Worldwide</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">40M</span>
+          <span class="stat-label">Legally Blind</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">24/7</span>
+          <span class="stat-label">Continuous Support</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="phone-mockup">
+        <div class="phone-screen">
+          <div class="detection-overlay">
+            <div class="det-box box-person">
+              <span class="det-label">Person</span>
+            </div>
+            <div class="det-box box-signal">
+              <span class="det-label">Traffic Light</span>
+            </div>
+            <div class="det-box box-car">
+              <span class="det-label">Vehicle</span>
+            </div>
+          </div>
+          <div class="voice-bubble">
+            <div class="voice-icon">🔊</div>
+            <span>"Turn left after 5 meters"</span>
+          </div>
+        </div>
+        <div class="phone-bottom-bar"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="problem-section" id="problem">
+    <div class="container">
+      <div class="section-tag">The Challenge</div>
+      <h2 class="section-title">The barriers visually impaired<br>people face every day</h2>
+      <div class="problem-grid">
+        <div class="problem-card" data-delay="0">
+          <div class="problem-icon">🚦</div>
+          <h3>Complex Environments</h3>
+          <p>Busy streets with unpredictable traffic patterns and multiple simultaneous obstacles demand constant, exhausting attention.</p>
+        </div>
+        <div class="problem-card" data-delay="100">
+          <div class="problem-icon">⚠️</div>
+          <h3>Physical Hazards</h3>
+          <p>Stairs, curbs, poles, and unexpected obstacles can cause serious falls — risks that sighted people never have to consider.</p>
+        </div>
+        <div class="problem-card" data-delay="200">
+          <div class="problem-icon">🤝</div>
+          <h3>Social Dependency</h3>
+          <p>Relying on others for navigation reduces personal autonomy, limits opportunities, and affects confidence and quality of life.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTION -->
+  <section class="solution-section" id="features">
+    <div class="container">
+      <div class="section-tag">Our Solution</div>
+      <h2 class="section-title">Three pillars of<br>intelligent navigation</h2>
+      <div class="feature-grid">
+        <div class="feature-card feature-large">
+          <div class="feature-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"/></svg>
+          </div>
+          <h3>Visual Perception</h3>
+          <p>AI continuously analyzes surroundings through camera input — detecting people, vehicles, stairs, traffic signals, and more in milliseconds.</p>
+          <div class="feature-tags">
+            <span>YOLO Detection</span>
+            <span>Real-time</span>
+            <span>On-Device</span>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+          </div>
+          <h3>Voice Interface</h3>
+          <p>Clear, multilingual audio instructions delivered through earphones — tailored to your preferences and surroundings.</p>
+          <div class="feature-tags">
+            <span>Multilingual</span>
+            <span>Text-to-Speech</span>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>GPS Navigation</h3>
+          <p>Turn-by-turn navigation combining map data with live visual input for fully contextual route guidance to any destination.</p>
+          <div class="feature-tags">
+            <span>Turn-by-Turn</span>
+            <span>Contextual</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-section" id="how-it-works">
+    <div class="container">
+      <div class="section-tag">Process</div>
+      <h2 class="section-title">From camera to clarity<br>in four steps</h2>
+      <div class="steps-wrapper">
+        <div class="step-line"></div>
+        <div class="steps-grid">
+          <div class="step" data-step="01">
+            <div class="step-circle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <div class="step-content">
+              <h3>Continuous Camera Capture</h3>
+              <p>A smartphone camera or smart glasses device streams visual data of the surrounding environment, creating a real-time feed for analysis.</p>
+            </div>
+          </div>
+          <div class="step" data-step="02">
+            <div class="step-circle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+            </div>
+            <div class="step-content">
+              <h3>AI Computer Vision Processing</h3>
+              <p>Machine learning models identify and classify objects in milliseconds: people, vehicles, stairs, doors, obstacles, and traffic signals.</p>
+            </div>
+          </div>
+          <div class="step" data-step="03">
+            <div class="step-circle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <div class="step-content">
+              <h3>Voice Guidance Generation</h3>
+              <p>Text-to-speech converts visual analysis into clear, multilingual audio alerts tailored to user preferences and the current context.</p>
+            </div>
+          </div>
+          <div class="step" data-step="04">
+            <div class="step-circle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="step-content">
+              <h3>GPS Navigation Integration</h3>
+              <p>Map data combines with visual input to provide contextual directions and route guidance to your chosen destination.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOICE ALERTS -->
+  <section class="alerts-section">
+    <div class="container">
+      <div class="section-tag">Real-Time Guidance</div>
+      <h2 class="section-title">Hear what the system says</h2>
+      <div class="alerts-grid">
+        <div class="alert-card alert-warning">
+          <div class="alert-wave">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <p class="alert-text">"Obstacle ahead"</p>
+          <span class="alert-desc">Warning of immediate hazards in path</span>
+        </div>
+        <div class="alert-card alert-info">
+          <div class="alert-wave">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <p class="alert-text">"Step up in front"</p>
+          <span class="alert-desc">Alert for stairs or elevation changes</span>
+        </div>
+        <div class="alert-card alert-danger">
+          <div class="alert-wave">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <p class="alert-text">"Car approaching from right"</p>
+          <span class="alert-desc">Traffic awareness and safety alerts</span>
+        </div>
+        <div class="alert-card alert-nav">
+          <div class="alert-wave">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <p class="alert-text">"Turn left after 5 meters"</p>
+          <span class="alert-desc">Precise directional guidance</span>
+        </div>
+      </div>
+      <p class="alerts-note">Voice commands also control navigation: <em>"Find the nearest bus stop"</em> or <em>"Navigate to main entrance"</em></p>
+    </div>
+  </section>
+
+  <!-- TECHNOLOGY -->
+  <section class="tech-section" id="technology">
+    <div class="container">
+      <div class="section-tag">Tech Stack</div>
+      <h2 class="section-title">Built with the best tools<br>in modern AI</h2>
+      <div class="tech-wrapper">
+        <div class="tech-pills-row">
+          <div class="tech-pill"><span class="pill-dot dot-blue"></span>Python</div>
+          <div class="tech-pill"><span class="pill-dot dot-green"></span>OpenCV</div>
+          <div class="tech-pill"><span class="pill-dot dot-orange"></span>TensorFlow Lite</div>
+          <div class="tech-pill"><span class="pill-dot dot-red"></span>YOLO</div>
+          <div class="tech-pill"><span class="pill-dot dot-teal"></span>Android SDK</div>
+          <div class="tech-pill"><span class="pill-dot dot-purple"></span>Text-to-Speech API</div>
+          <div class="tech-pill"><span class="pill-dot dot-yellow"></span>GPS Maps API</div>
+        </div>
+        <div class="tech-cards">
+          <div class="tech-card">
+            <div class="tech-card-icon">🧠</div>
+            <h3>Computer Vision</h3>
+            <p>YOLO and TensorFlow Lite enable fast, accurate object detection directly on mobile devices without cloud dependency.</p>
+            <div class="tech-card-highlight">On-device • No internet required</div>
+          </div>
+          <div class="tech-card">
+            <div class="tech-card-icon">🎙️</div>
+            <h3>Voice Interface</h3>
+            <p>Text-to-Speech and Speech API provide natural-sounding, multilingual voice output in the user's preferred language.</p>
+            <div class="tech-card-highlight">Multilingual • Natural voice</div>
+          </div>
+          <div class="tech-card">
+            <div class="tech-card-icon">🗺️</div>
+            <h3>Navigation Engine</h3>
+            <p>GPS integration with map services delivers turn-by-turn directions and full location awareness in real time.</p>
+            <div class="tech-card-highlight">Turn-by-turn • Contextual</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXTENDED CAPABILITIES -->
+  <section class="extended-section">
+    <div class="container">
+      <div class="section-tag">Extended Features</div>
+      <h2 class="section-title">Beyond basic navigation</h2>
+      <div class="ext-grid">
+        <div class="ext-card">
+          <div class="ext-num">01</div>
+          <h3>Traffic Signal Detection</h3>
+          <p>Recognizes red, yellow, and green lights for safe street crossing at any intersection.</p>
+        </div>
+        <div class="ext-card">
+          <div class="ext-num">02</div>
+          <h3>Bus Number Recognition</h3>
+          <p>Identifies approaching public transit vehicles so you never miss your bus.</p>
+        </div>
+        <div class="ext-card">
+          <div class="ext-num">03</div>
+          <h3>Indoor Navigation</h3>
+          <p>Guides through malls, airports, hospitals, and complex buildings with ease.</p>
+        </div>
+        <div class="ext-card">
+          <div class="ext-num">04</div>
+          <h3>Emergency Button</h3>
+          <p>One-touch access to emergency contacts or assistance services when needed most.</p>
+        </div>
+        <div class="ext-card">
+          <div class="ext-num">05</div>
+          <h3>Voice Command Navigation</h3>
+          <p>Hands-free control through natural language: "Take me to the nearest café"</p>
+        </div>
+        <div class="ext-card">
+          <div class="ext-num">06</div>
+          <h3>Offline Operation</h3>
+          <p>TensorFlow Lite enables full offline use — ensuring privacy and reliability everywhere.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT -->
+  <section class="impact-section" id="impact">
+    <div class="container">
+      <div class="impact-inner">
+        <div class="impact-text">
+          <div class="section-tag">Our Impact</div>
+          <h2 class="section-title">Transforming lives<br>through independence</h2>
+          <div class="impact-points">
+            <div class="impact-point">
+              <div class="impact-check">✓</div>
+              <div>
+                <h4>Independent Travel</h4>
+                <p>Freedom to navigate without relying on guides or assistance — on your own schedule.</p>
+              </div>
+            </div>
+            <div class="impact-point">
+              <div class="impact-check">✓</div>
+              <div>
+                <h4>Enhanced Safety</h4>
+                <p>Real-time obstacle detection dramatically reduces accident risk in any environment.</p>
+              </div>
+            </div>
+            <div class="impact-point">
+              <div class="impact-check">✓</div>
+              <div>
+                <h4>Increased Confidence</h4>
+                <p>Greater mobility builds self-reliance and opens opportunities that were previously inaccessible.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="impact-stats-panel">
+          <div class="big-stat">
+            <span class="big-num">285M</span>
+            <span class="big-label">people worldwide with moderate to severe vision impairment</span>
+          </div>
+          <div class="big-stat">
+            <span class="big-num">40M</span>
+            <span class="big-label">legally blind individuals who can benefit from this technology</span>
+          </div>
+          <div class="impact-quote">
+            "Empowering independence through intelligent technology — one step at a time."
+          </div>
+        </div>
+      </div>
+      <div class="environments-bar">
+        <span>Schools</span>
+        <span>Workplaces</span>
+        <span>Public Transport</span>
+        <span>Shopping Centers</span>
+        <span>Hospitals</span>
+        <span>Airports</span>
+        <span>Parks</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / CTA -->
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <div class="cta-inner">
+        <h2>Join the waitlist for<br><em>early access</em></h2>
+        <p>Be among the first to experience VisionPath when we launch. Help us shape the future of accessibility.</p>
+        <div class="cta-form">
+          <input type="email" id="emailInput" placeholder="Enter your email address" />
+          <button class="btn-primary" id="ctaBtn" onclick="handleSignup()">Get Early Access</button>
+        </div>
+        <p class="cta-fine">No spam, ever. Unsubscribe at any time.</p>
+        <div id="successMsg" class="success-msg" style="display:none;">
+          ✅ You're on the list! We'll be in touch soon.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#" class="logo">Vision<span>Path</span></a>
+          <p>AI-powered navigation for a more accessible world.</p>
+          <p class="footer-team">Built by <strong>Team Aeroprix</strong></p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Product</h4>
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#technology">Technology</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="#impact">Impact</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 VisionPath by Team Aeroprix. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
